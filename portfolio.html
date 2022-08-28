@@ -27,43 +27,58 @@
   </head>
   <body class="page">
     <header class="header">
-      <nav class="main-nav">
-        <a class="link" href="./index.html"
-          ><span class="logo-first-color">Web</span><span class="logo-second-color">Studio</span>
+      <div class="container header-container">
+        <a class="link header-link" href="./index.html"
+            ><span class="logo-first-color">Web</span
+            ><span class="logo-second-color">Studio</span>
           </a>
-        <ul class="list">
-          <li class="list-item">
-            <a class="link" href="./index.html">Студія</a> 
+        <nav class="main-nav">          
+          <ul class="list header-nav-list">
+            <li class="list-item">
+              <a class="link" href="./index.html">Студія</a>
+            </li>
+            <li class="list-item">
+              <a class="link current" href="./portfolio.html">Портфоліо</a> 
+            </li>
+            </li>
+            <li class="list-item">
+              <a class="link contacts" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list header-list">
+          <li>
+            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="list-item">
-            <a class="link current" href="./portfolio.html">Портфоліо</a> 
-          </li>
-          <li class="list-item">
-            <a class="link contacts" href="./index.html">Контакти</a>
+          <li>
+            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
-    <main>
+        <main>
       <!--title section-->
-      <section class="projects">
+      <section class="section projects">
+        <div class="container">
         <h1 class="filtrs-title">Projects</h1>
-        <ul class="list">
-          <li class="filtrs-item"><button class="filtrs-btn" type="button">Веб-сайти</button></li>
-          <li class="filtrs-item"><button class="filtrs-btn" type="button">Додатки</button></li>
-          <li class="filtrs-item"><button class="filtrs-btn" type="button">Дизайн</button></li>
-          <li class="filtrs-item"><button class="filtrs-btn" type="button">Маркетинг</button></li>
-          <li class="filtrs-item"><button class="filtrs-btn" type="button">Усі</button></li>
+        <ul class="list container-filtrs">
+          <li class="filtrs-item">
+            <button class="filtrs-btn" type="button">Веб-сайти</button>
+          </li>
+          <li class="filtrs-item">
+            <button class="filtrs-btn" type="button">Додатки</button>
+          </li>
+          <li class="filtrs-item">
+            <button class="filtrs-btn" type="button">Дизайн</button>
+          </li>
+          <li class="filtrs-item">
+            <button class="filtrs-btn" type="button">Маркетинг</button>
+          </li>
+          <li class="filtrs-item">
+            <button class="filtrs-btn" type="button">Усі</button>
+          </li>
         </ul>      
-        <ul class="list">
+        <ul class="list container-project">
           <li class="project-item">
             <a class="link" href="./portfolio.html">
             <img class="project-img" src="./imeges/portfolio/img1.jpg" alt="" width="370" height="295" />
@@ -103,7 +118,7 @@
             <a class="link" href="./portfolio.html">
             <img class="project-img" src="./imeges/portfolio/img6.jpg" alt="" width="370" height="295" />
             <h2 class="project-name">Inspiration has no Borders</h3>
-            <p class="project-filtr"> class="project-filtr"Веб-сайт</p>
+            <p class="project-filtr">Веб-сайт</p>
           </a>
           </li>
           <li class="project-item">
@@ -128,27 +143,33 @@
           </a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <a class="link" href="./index.html"
         ><span class="logo-first-color">Web</span><span class="logo-sec-col-footer">Studio</span></a
       >
-      <address style="font-style: normal;">
-        <ul class="list">
-          <li
-            ><a
+      <address style="font-style: normal">
+        <ul class="list ">
+          <li class="address-link">
+            <a
               class="link address"
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            ></li
-          >
-          <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              >м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="address-item">
+            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="address-item">
+            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>

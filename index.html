@@ -58,9 +58,7 @@
 
     <main>
 
-      <!--Шапка сайту-->
-
-      <section class="hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-btn" type="button">Замовити послугу</button>
@@ -69,7 +67,7 @@
 
       <!--Переваги компанії-->
 
-      <section class="about">
+      <section class="section about">
         <div class="container">
         <h2 class="about-title">Переваги компанії</h2>
         <ul class="list container-about">
@@ -98,7 +96,7 @@
 
       <!--Діяльність компанії-->
 
-      <section class="activity">
+      <section class="section activity">
         <div class="container">
         <h2 class="activity-title">Чим ми займаємося</h2>
         <ul class="list container-activity">
@@ -135,12 +133,12 @@
 
       <!--Наша команда-->
 
-      <section class="team">
+      <section class="section team">
         <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="list container-team">
           <li>
-            <div>
+            <div class="team-card">
               <img
                 class="team-img"
                 src="./imeges/our_team/img21.jpg"
@@ -153,7 +151,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="team-card">
               <img
                 class="team-img"
                 src="./imeges/our_team/img22.jpg"
@@ -166,7 +164,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="team-card">
               <img
                 class="team-img"
                 src="./imeges/our_team/img23.jpg"
@@ -179,7 +177,7 @@
             </div>
           </li>
           <li>
-            <div>
+            <div class="team-card">
               <img
                 class="team-img"
                 src="./imeges/our_team/img24.jpg"
@@ -195,25 +193,30 @@
       </div>
       </section>
     </main>
+
     <!--Нижній блок-->
+
     <footer class="footer">
       <div class="container">
       <a class="link" href="./index.html"
         ><span class="logo-first-color">Web</span><span class="logo-sec-col-footer">Studio</span></a
       >
       <address style="font-style: normal">
-        <ul class="list">
-          <li
-            ><a
+        <ul class="list ">
+          <li class="address-link">
+            <a
               class="link address"
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            ></li
-          >
-          <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              >м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="address-item">
+            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="address-item">
+            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </div>

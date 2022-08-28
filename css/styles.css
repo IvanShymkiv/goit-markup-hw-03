@@ -27,6 +27,11 @@
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 h1,
 h2,
 h3,
@@ -58,8 +63,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
-}
+  outline: 2px solid tomato;
+ }
 
 
 
@@ -150,20 +155,24 @@ img {
 
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
   padding-bottom: 200px;
+  padding-left: auto;
+  padding-right: auto;
+  
 }
 
-.hero-title {
-  font-weight: 900;
+.hero-title { 
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   color: var(--other-txt-cl);
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  padding-left: 252px;
-  padding-right: 252px;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .hero-btn {
@@ -175,7 +184,7 @@ img {
   color: var(--other-txt-cl);
   background-color: var(--accent-txt-cl);
   cursor: pointer;
-  border-radius: 4%;
+  border-radius: 4px;
   padding: 10px 32px;
   border: none;
   
@@ -196,10 +205,8 @@ img {
 
 .container-about {
   display: flex;
-  margin-top: 94px;
   gap: 30px;
-  padding-bottom: 118px;
-
+  
 }
 
 .about-title {
@@ -250,7 +257,6 @@ img {
   display: flex;
   gap: 30px;
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 /**
@@ -268,11 +274,19 @@ img {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-  padding-top: 94px;
 }
 
 .container-team {
   display: flex;
+  margin-top: 50px;
+  gap: 30px;
+  
+}
+
+.team-card {
+  box-shadow: 0px 2px 1px 0px;
+  border-radius: 4px;
+
 }
 
 .team-expert {
@@ -280,6 +294,8 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-profil {
@@ -297,6 +313,8 @@ img {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
  }
 
 .footer,
@@ -305,15 +323,24 @@ img {
   letter-spacing: 0.03em;
   color: var(--other-txt-cl);
   text-align: left;
+
 }
+.address-link {
+  margin-top: 20px;
+}
+.address-item {
+  margin-top: 9px;
+ 
+}
+
 .logo-sec-col-footer {
   color: #ffffff;
 }
 
 /*
-    |****************************
+    |*********************************************************
     | Portfolio page
-    |****************************
+    |*********************************************************
   */
 
 
@@ -323,9 +350,26 @@ img {
     |============================
   */
 
-  .filtrs-title {
-    display: none;
+   .container-filtrs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
   }
+
+
+  .filtrs-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
   .filtrs-btn {
     font-family: inherit;
     font-weight: 500;
@@ -334,6 +378,9 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     background-color: #f5f4fa;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
     
     cursor: pointer;
 }
@@ -353,12 +400,43 @@ img {
     |Projects
     |============================
   */
-  .projects {
-    text-align: left;
+  
+  .projects-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
-  .projects-title {
-    display: none;
+  .container-project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    text-align: left;
+    
+    /*gap: 30px;*/
+    
+    
+  }
+  .project-item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    outline: 1px solid #EEEEEE;
+
+  }
+  .project-item:nth-child(3n) {
+      margin-right: 0;
+  }
+
+  .project-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
   }
 
   .project-name {
@@ -367,6 +445,9 @@ img {
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   .project-filtr {
@@ -374,13 +455,13 @@ img {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--light-txt-cl);
+    margin-top: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 20px;
   }
 
-
-
-
-
-
+  
 
 
 
