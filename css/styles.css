@@ -1,0 +1,275 @@
+:root {
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --light-txt-cl: #757575;
+  --other-txt-cl: #ffffff;
+  --accent-txt-cl: #2196f3;
+
+  /* Others */
+}
+
+.page {
+  font-family: var(--main-font);
+  font-size: 14px;
+  text-align: center;
+  color: var(--main-txt-cl);
+}
+
+/* reset */
+.link, .address-link{
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/**
+    |============================
+    | Header
+    |============================
+  */
+.header {
+  text-align: left;
+}
+.link,
+.address-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.address-link {
+  color: var(--light-txt-cl);
+}
+
+.link:hover, .current,
+.link:focus, .address-link:hover {
+  color: var(--accent-txt-cl);
+}
+
+.logo-first-color,
+.logo-second-color, .logo-sec-col-footer {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-first-color {
+  color: var(--accent-txt-cl);
+}
+
+.logo-second-color {
+  color: #000000;
+}
+/**
+    |============================
+    | Hero
+    |============================
+  */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  color: var(--other-txt-cl);
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--other-txt-cl);
+  background-color: var(--accent-txt-cl);
+  cursor: pointer;
+}
+
+.hero-btn:active {
+  color: #188ce8;
+}
+
+/**
+    |============================
+    | About
+    |============================
+  */
+.about {
+  text-align: left;
+}
+
+.about-title {
+  display: none;
+}
+
+.about-preference {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.about-txt {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+}
+
+/**
+    |============================
+    | Activity
+    |============================
+  */
+
+.activity-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+/**
+    |============================
+    | Team
+    |============================
+  */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+.team-expert {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+.team-profil {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--light-txt-cl);
+}
+
+/**
+    |============================
+    | Footer
+    |============================
+  */
+
+.footer {
+  background-color: #2f303a;
+ }
+
+.footer,
+.address {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--other-txt-cl);
+  text-align: left;
+}
+.logo-sec-col-footer {
+  color: #ffffff;
+}
+
+/*
+    |****************************
+    | Portfolio page
+    |****************************
+  */
+
+
+/*
+    |============================
+    |Filters
+    |============================
+  */
+
+  .filtrs-title {
+    display: none;
+  }
+  .filtrs-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    background-color: #f5f4fa;
+    
+    cursor: pointer;
+}
+.filtrs-btn:hover, .filtrs-btn:focus {
+  color: var(--other-txt-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+  .filtrs-btn:active {
+    color: var(--accent-txt-cl);
+  }
+
+
+
+  /*
+    |============================
+    |Projects
+    |============================
+  */
+  .projects {
+    text-align: left;
+  }
+
+  .projects-title {
+    display: none;
+  }
+
+  .project-name {
+    color: var(--main-txt-cl);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+  }
+
+  .project-filtr {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--light-txt-cl);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
