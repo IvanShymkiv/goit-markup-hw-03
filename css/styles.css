@@ -62,9 +62,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid tomato;
- }
+  margin-right: auto; 
+}
 
 
 
@@ -83,19 +82,14 @@ img {
 .header-container {
   display: flex;
   border-bottom: 1px solid #ECECEC;
+  align-items: center;
   
   
-}
-
-.header-link {
-  margin-top: 24px;
-  margin-left: auto;
 }
 
 .main-nav {
   margin-left: 93px;
-  margin-top: 32px;
-  margin-right: 344px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -107,9 +101,10 @@ img {
 
 .header-list {
  display: flex;
- margin-top: 32px;
- margin-right: auto;
+ padding-top: 32px;
+ margin-left: auto;
  gap: 50px;
+ padding-bottom: 32px;
   
 }
 
@@ -157,10 +152,7 @@ img {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: auto;
-  padding-right: auto;
-  
-}
+ }
 
 .hero-title { 
   font-size: 44px;
@@ -250,13 +242,18 @@ img {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
-
+ 
 }
 
 .container-activity {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  padding-top: 0px;
+}
+
+.activity {
+  padding-top: 0px;
 }
 
 /**
@@ -286,6 +283,9 @@ img {
 .team-card {
   box-shadow: 0px 2px 1px 0px;
   border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
 
 }
 
@@ -294,7 +294,6 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -325,9 +324,11 @@ img {
   text-align: left;
 
 }
-.address-link {
+
+.container-address {
   margin-top: 20px;
 }
+
 .address-item {
   margin-top: 9px;
  
@@ -428,7 +429,7 @@ img {
     flex-basis: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    outline: 1px solid #EEEEEE;
+    
 
   }
   .project-item:nth-child(3n) {
@@ -439,15 +440,19 @@ img {
     margin-bottom: 0;
   }
 
+  .under-img {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+  }
+
   .project-name {
     color: var(--main-txt-cl);
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-    margin-top: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
   }
 
   .project-filtr {
@@ -456,9 +461,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--light-txt-cl);
     margin-top: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
-    padding-bottom: 20px;
   }
 
   
